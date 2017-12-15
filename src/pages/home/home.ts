@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController, ModalController } from 'ionic-angular';
 import { PersonProvider } from '../../providers/person/person';
 import { PerformanceDataProvider } from '../../providers/performance-data/performance-data';
+import { ResultsPage } from '../../pages/results/results';
 
 @Component({
   selector: 'page-home',
@@ -13,7 +14,7 @@ export class HomePage {
     public navCtrl: NavController,
     public person: PersonProvider,
     public performanceData: PerformanceDataProvider,
-    public modelCtrl: ModalController
+    public modalCtrl: ModalController
   ) {
     this.user = { distance: 1000, age: 20, gender: 'female' };
   }
