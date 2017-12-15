@@ -18,8 +18,8 @@ export class HomePage {
   }
 
   calculate(user) {
-      this.person.age = this.user.age;
-      this.person.gender = this.user.gender;
+    this.person.age = this.user.age;
+    this.person.gender = this.user.gender;
 
     this.person.doAssessment(this.user.distance);
     this.performanceData
